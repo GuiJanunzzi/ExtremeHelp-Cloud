@@ -102,6 +102,9 @@ sudo docker run -d \
     -e ORACLE_CHARACTERSET=AL32UTF8 \
     -v oracle_dados:/opt/oracle/oradata \
     [container-registry.oracle.com/database/free](https://container-registry.oracle.com/database/free)
+
+#comando em uma linha
+sudo docker run -d --name extremehelp-db -p 1521:1521 -e ORACLE_PWD=extremehelp@123 -e ORACLE_CHARACTERSET=AL32UTF8 -v oracle_dados:/opt/oracle/oradata container-registry.oracle.com/database/free
 ```
 
 **2.4. Verifique se o Banco está Pronto:**
